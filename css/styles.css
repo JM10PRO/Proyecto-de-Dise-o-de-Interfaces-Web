@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Titillium Web ExtraLight';
+    src: url('../assets/fonts/Titillium_Web/TitilliumWeb-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+}
+@font-face {
+    font-family: 'Titillium Web SemiBold';
+    src: url('../assets/fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf');
+}
+
+#noticias {
+    font-family: 'Titillium Web SemiBold', sans-serif;
+}
+
+aside h2 {
+    font-family: 'Titillium Web', sans-serif;
+    
+}
