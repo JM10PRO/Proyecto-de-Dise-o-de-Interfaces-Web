@@ -15,7 +15,8 @@
 <body class="bg-dark">
     <nav class="navbar navbar-expand-md bg-body-secondary">
         <div class="container-fluid">
-            <a href="index.html"><span><img src="assets/img/logo-F1.png" alt="logo-f1" width="130px" style="filter: contrast(150%);"></span></a>
+            <a href="index.html"><span><img src="assets/img/logo-F1.png" alt="logo-f1" width="130px"
+                        style="filter: contrast(150%);"></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -27,7 +28,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#clasificacion">Clasificación</a>
                     </li>
                     <li class="nav-item mx-2 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -54,28 +55,29 @@
             </div>
         </div>
     </nav>
+    <!-- Header, con noticias y carousel -->
+    <header class="container-fluid mt-5">
 
-    <hr>
-    
-    <div class="container-fluid">
+        <div class="row justify-content-around align-content-around h-100">
+            <!-- NOTICIAS -->
+            <fieldset class="col col-12 col-lg-3 order-2 order-lg-1 mx-sm-3 align-content-between bg-dark-subtle ">
 
-        <div class="row justify-content-around align-content-around">
-        
-            <aside class="col col-3 bg-dark-subtle p-3 rounded-3 align-content-between">
-                <h5 id="noticias">Noticias</h5>
+                <p class="h6 text-uppercase mt-2 mb-3" id="noticias">Noticias</p>
+
                 <div id="accordion">
                     <!-- Section 1 -->
                     <h2>Última hora</h2>
                     <div>
-                        <a href="#">Fernando Alonso ficha por Aston Martin</a>
+                        <a href="#" class="text-info-emphasis">Aston Martin presenta el nuevo AMR23 F1 en
+                            Silverstone</a>
                     </div>
 
                     <!-- Section 2 -->
                     <h2>Próximos eventos</h2>
                     <div>
-                        <a href="#">Los eventos de esta semana</a>
+                        <a href="#" class="text-info-emphasis">Fernando Alonso ficha por Aston Martin</a>
                     </div>
-                    
+
                     <!-- Section 3 -->
                     <h2>Section 3</h2>
                     <div>
@@ -102,8 +104,14 @@
                     </div>
 
                 </div>
-            </aside>
-            <div class="col col-7">
+
+            </fieldset>
+
+            <!-- CAROUSEL de fotos -->
+            <div class="col col-12 col-md-5 order-1 order-lg-2 mb-5 mb-lg-0">
+
+                <p class="h3 text-center text-white bg-danger p-2 mb-0 rounded-top">Coches para la temporada 2023</p>
+
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -115,25 +123,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="assets/img/logo-F1.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
+                            <img src="assets/img/ar23.jpg" class="d-block w-100" alt="am23">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/img/logo-F1.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
+                            <img src="assets/img/am23.jpg" class="d-block w-100" alt="ar23">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/img/logo-F1.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
+                            <img src="assets/img/mc23.jpg" class="d-block w-100" alt="mc23">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -148,7 +144,341 @@
                     </button>
                 </div>
             </div>
+
         </div>
+    </header>
+
+    <hr>
+    <!-- Tabla de clasificación de pilotos -->
+    <div class="container-fluid bg-light p-5">
+        <p class="h1 mb-3" id="clasificacion">Clasificación de pilotos 2022</p>
+        <fieldset>
+            <legend>
+            </legend>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th class="ps-5"><abbr title="Posición">Pos</abbr></th>
+                            <th>Piloto</th>
+                            <th>Nacionalidad</th>
+                            <th>Equipo</th>
+                            <th><abbr title="Puntos">PTS</abbr></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="ps-5">1</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Max</span>
+                                <span class="d-none d-sm-block">Verstappen</span>
+                                <span class="uppercase d-block d-sm-none">VER</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">NED</td>
+                            <td>
+                                Red Bull Racing
+                            </td>
+                            <td class="dark bold">454</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">2</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Charles</span>
+                                <span class="d-none d-sm-block">Leclerc</span>
+                                <span class="uppercase d-block d-sm-none">LEC</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">MON</td>
+                            <td>
+                                Ferrari
+                            </td>
+                            <td class="dark bold">308</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">3</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Sergio</span>
+                                <span class="d-none d-sm-block">Perez</span>
+                                <span class="uppercase d-block d-sm-none">PER</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">MEX</td>
+                            <td>
+                                Red Bull Racing
+                            </td>
+                            <td class="dark bold">305</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">4</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">George</span>
+                                <span class="d-none d-sm-block">Russell</span>
+                                <span class="uppercase d-block d-sm-none">RUS</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">GBR</td>
+                            <td>
+                                Mercedes
+                            </td>
+                            <td class="dark bold">275</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">5</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Carlos</span>
+                                <span class="d-none d-sm-block">Sainz</span>
+                                <span class="uppercase d-block d-sm-none">SAI</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">ESP</td>
+                            <td>
+                                Ferrari
+                            </td>
+                            <td class="dark bold">246</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">6</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Lewis</span>
+                                <span class="d-none d-sm-block">Hamilton</span>
+                                <span class="uppercase d-block d-sm-none">HAM</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">GBR</td>
+                            <td>
+                                Mercedes
+                            </td>
+                            <td class="dark bold">240</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">7</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Lando</span>
+                                <span class="d-none d-sm-block">Norris</span>
+                                <span class="uppercase d-block d-sm-none">NOR</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">GBR</td>
+                            <td>
+                                McLaren F1 Racing
+                            </td>
+                            <td class="dark bold">122</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">8</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Esteban</span>
+                                <span class="d-none d-sm-block">Ocon</span>
+                                <span class="uppercase d-block d-sm-none">OCO</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">FRA</td>
+                            <td>
+                                Alpine Renault
+                            </td>
+                            <td class="dark bold">92</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">9</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Fernando</span>
+                                <span class="d-none d-sm-block">Alonso</span>
+                                <span class="uppercase d-block d-sm-none">ALO</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">ESP</td>
+                            <td>
+                                Alpine Renault
+                            </td>
+                            <td class="dark bold">81</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">10</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Valtteri</span>
+                                <span class="d-none d-sm-block">Bottas</span>
+                                <span class="uppercase d-block d-sm-none">BOT</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">FIN</td>
+                            <td>
+                                Alfa Romeo F1
+                            </td>
+                            <td class="dark bold">49</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">11</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Daniel</span>
+                                <span class="d-none d-sm-block">Ricciardo</span>
+                                <span class="uppercase d-block d-sm-none">RIC</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">AUS</td>
+                            <td>
+                                McLaren F1 Racing
+                            </td>
+                            <td class="dark bold">37</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">12</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Sebastian</span>
+                                <span class="d-none d-sm-block">Vettel</span>
+                                <span class="uppercase d-block d-sm-none">VET</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">GER</td>
+                            <td>
+                                Aston Martin
+                            </td>
+                            <td class="dark bold">37</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">13</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Kevin</span>
+                                <span class="d-none d-sm-block">Magnussen</span>
+                                <span class="uppercase d-block d-sm-none">MAG</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">DEN</td>
+                            <td>
+                                Haas Team
+                            </td>
+                            <td class="dark bold">25</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">14</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Pierre</span>
+                                <span class="d-none d-sm-block">Gasly</span>
+                                <span class="uppercase d-block d-sm-none">GAS</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">FRA</td>
+                            <td>
+                                AlphaTauri RBPT
+                            </td>
+                            <td class="dark bold">23</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">15</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Lance</span>
+                                <span class="d-none d-sm-block">Stroll</span>
+                                <span class="uppercase d-block d-sm-none">STR</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">CAN</td>
+                            <td>
+                                Aston Martin
+                            </td>
+                            <td class="dark bold">18</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">16</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Mick</span>
+                                <span class="d-none d-sm-block">Schumacher</span>
+                                <span class="uppercase d-block d-sm-none">MSC</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">GER</td>
+                            <td>
+                                Haas Team
+                            </td>
+                            <td class="dark bold">12</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">17</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Yuki</span>
+                                <span class="d-none d-sm-block">Tsunoda</span>
+                                <span class="uppercase d-block d-sm-none">TSU</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">JPN</td>
+                            <td>
+                                AlphaTauri RBPT
+                            </td>
+                            <td class="dark bold">12</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">18</td>
+                            <td>
+                                <span class="d-none d-sm-block">Zhou</span>
+                                <span class="d-none d-sm-none d-md-block">Guanyu</span>
+                                <span class="uppercase d-block d-sm-none">ZHO</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">CHN</td>
+                            <td>
+                                Alfa Romeo F1
+                            </td>
+                            <td class="dark bold">6</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">19</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Alexander</span>
+                                <span class="d-none d-sm-block">Albon</span>
+                                <span class="uppercase d-block d-sm-none">ALB</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">THA</td>
+                            <td>
+                                Williams Racing
+                            </td>
+                            <td class="dark bold">4</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">20</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Nicholas</span>
+                                <span class="d-none d-sm-block">Latifi</span>
+                                <span class="uppercase d-block d-sm-none">LAT</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">CAN</td>
+                            <td>
+                                Williams Racing
+                            </td>
+                            <td class="dark bold">2</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">21</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Nyck</span>
+                                <span class="d-none d-sm-block">De Vries</span>
+                                <span class="uppercase d-block d-sm-none">DEV</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">NED</td>
+                            <td>
+                                Williams Racing
+                            </td>
+                            <td class="dark bold">2</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-5">22</td>
+                            <td>
+                                <span class="d-none d-sm-none d-md-block">Nico</span>
+                                <span class="d-none d-sm-block">Hulkenberg</span>
+                                <span class="uppercase d-block d-sm-none">HUL</span>
+                            </td>
+                            <td class="dark semi-bold uppercase">GER</td>
+                            <td>
+                                Aston Martin
+                            </td>
+                            <td class="dark bold">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
     </div>
 </body>
 <script src="js/jquery-3.6.3.js"></script>

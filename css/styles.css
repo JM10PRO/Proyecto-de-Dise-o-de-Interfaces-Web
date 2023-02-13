@@ -3,6 +3,10 @@
     src: url('../assets/fonts/Titillium_Web/TitilliumWeb-ExtraLight.ttf');
 }
 @font-face {
+    font-family: 'Titillium Web Light';
+    src: url('../assets/fonts/Titillium_Web/TitilliumWeb-Light.ttf');
+}
+@font-face {
     font-family: 'Titillium Web';
     src: url('../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
 }
@@ -18,4 +22,19 @@
 aside h2 {
     font-family: 'Titillium Web', sans-serif;
     
+}
+
+fieldset {
+    border-top: solid 10px #ee0000;
+    border-right: solid 10px #ee0000;
+    border-bottom: solid 10px #ee0000;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#clasificacion {
+    font-family: 'Titillium Web Light', sans-serif;
 }
