@@ -14,14 +14,9 @@
     font-family: 'Titillium Web SemiBold';
     src: url('../assets/fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf');
 }
-
-#noticias {
-    font-family: 'Titillium Web SemiBold', sans-serif;
-}
-
-aside h2 {
-    font-family: 'Titillium Web', sans-serif;
-    
+@font-face {
+    font-family: 'F1';
+    src: url('../assets/fonts/Formula1/Formula1-Regular.ttf');
 }
 
 fieldset {
@@ -35,6 +30,27 @@ fieldset {
     padding-bottom: 10px;
 }
 
+#noticias {
+    font-family: 'Titillium Web SemiBold', sans-serif;
+}
+
+fieldset div#accordion a {
+    font-family: 'F1', sans-serif;
+}
+
 #clasificacion {
     font-family: 'Titillium Web Light', sans-serif;
+}
+
+nav a.nav-link {
+    font-family: 'F1', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+.coches {
+    background-color: #d70000ce;
+    font-family: 'F1', sans-serif;
+    letter-spacing: .5px;
 }
