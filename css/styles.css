@@ -54,3 +54,9 @@ nav a.nav-link {
     font-family: 'F1', sans-serif;
     letter-spacing: .5px;
 }
+
+div#scrollspy {
+    position: relative; 
+    height: 400px;
+    overflow-y: scroll;
+}
