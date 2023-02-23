@@ -19,6 +19,61 @@
     src: url('../assets/fonts/Formula1/Formula1-Regular.ttf');
 }
 
+/* Cuando hace scroll automático al seleccionar el link del nav que no se superponga al título del enlace al que se dirige */
+[id] {
+    scroll-margin-top: 90px;
+}
+
+/* Barra de scroll personalizada */
+body::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+    background-color: #75747470;
+}
+
+body::-webkit-scrollbar:hover {
+    background-color: rgba(238, 0, 0, 0.564);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background: linear-gradient(45deg,#fc9898, #951c1c, #fc9898);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #ffffff, #cc2727, #ffffff);
+}
+
+body::-webkit-scrollbar-button:decrement{
+    background-color: #757474;
+}
+
+body::-webkit-scrollbar-button:decrement:hover{
+    background-color: #aaaaaa;
+}
+
+body::-webkit-scrollbar-button:increment{
+    background-color: #757474;
+}
+
+body::-webkit-scrollbar-button:increment:hover{
+    background-color: #aaaaaa;
+}
+
+#icono-flecha-abajo:hover {
+    background-color: #ee0000;
+    border-radius: 50%;
+    -webkit-transition: all 0.45s ease-out;
+    transition: all 0.45s ease-out;
+}
+
+header > div {
+    margin-top: 120px !important;
+}
+
 fieldset {
     border-top: solid 10px #ee0000;
     border-right: solid 10px #ee0000;
@@ -59,4 +114,8 @@ div#scrollspy {
     position: relative; 
     height: 400px;
     overflow-y: scroll;
+}
+
+#video {
+    font-family: 'F1', sans-serif;
 }
