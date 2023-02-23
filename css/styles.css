@@ -19,6 +19,10 @@
     src: url('../assets/fonts/Formula1/Formula1-Regular.ttf');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Cuando hace scroll automático al seleccionar el link del nav que no se superponga al título del enlace al que se dirige */
 [id] {
     scroll-margin-top: 90px;
@@ -118,4 +122,30 @@ div#scrollspy {
 
 #video {
     font-family: 'F1', sans-serif;
+}
+
+.img-flecha {
+    width: 50px;
+}
+
+.btn-volver-arriba {
+    position: fixed;
+    bottom: 1%;
+    right: .5%;
+    background-color: #dbe4e4;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: 0.3s;
+}
+
+.btn-volver-arriba:hover {
+    background-color: #951c1c;
+    border-radius: 50%;
+    -webkit-transition: all 0.30s ease-out;
+    transition: all 0.30s ease-out;
+}
+  
+.btn-scrolltop-on {
+    transform: translateY(0);
 }
