@@ -120,7 +120,7 @@ div#scrollspy {
     overflow-y: scroll;
 }
 
-#video {
+#video, #pitlane {
     font-family: 'F1', sans-serif;
 }
 
@@ -145,7 +145,67 @@ div#scrollspy {
     -webkit-transition: all 0.30s ease-out;
     transition: all 0.30s ease-out;
 }
-  
+
 .btn-scrolltop-on {
     transform: translateY(0);
+}
+
+.btn-ir-abajo {
+    position: fixed;
+    bottom: 1%;
+    right: .5%;
+    background-color: #dbe4e4;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: 0.3s;
+}
+
+.btn-ir-abajo:hover {
+    background-color: #951c1c;
+    border-radius: 50%;
+    -webkit-transition: all 0.30s ease-out;
+    transition: all 0.30s ease-out;
+}
+
+.btn-scrolldown-on {
+    transform: translateY(0);
+}
+
+.mycontainer {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    font-family: 'Titillium Web', sans-serif;
+    box-shadow: -.2rem 0 2rem #000;
+    transition: 300ms ease-in-out;
+}
+
+.card + .card {
+    margin-left: -10px;
+}
+
+.card:hover {
+    transform: rotate(-4deg);
+}
+
+.card:hover ~ .card {
+    z-index: 1;
+    translate: 60px;
+}
+
+.card-title, #contacto {
+    font-family: 'Titillium Web Semibold', sans-serif;
+}
+
+#formulario {
+    font-family: 'F1', sans-serif;
+}
+
+.error {
+    color: #cc2727;
+    font-family: 'F1', sans-serif;
+    font-size: small;
 }
