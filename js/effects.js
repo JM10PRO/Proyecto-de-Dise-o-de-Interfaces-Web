@@ -1,11 +1,38 @@
-$(document).ready(function () {
+jQuery(function() {
     $(function () {
         $("#accordion").accordion({
             collapsible: true,
             heightStyle: "content"
         });
+        
     });
 
+    // Animación ¡No te vayas, por favor!
+    let previousTitle = document.title;
+    window.addEventListener('blur', () => {
+      previousTitle = document.title;
+      document.title = '¡No te vayas por favor! 😨';
+    });
+
+    window.addEventListener('focus', () => {
+      document.title = previousTitle;
+    });
+
+    // Animación spinner
+    $('#myspinner').hide();
+    
+    $('#mostrar-spinner').on('click', function () {
+      
+      $("#myspinner").show();
+      const myTimeout = setTimeout(ocultarSpinner, 5000);
+      
+    });
+    
+    function ocultarSpinner() {
+      $("#myspinner").hide();
+    }
+
+    // Aparece o desaparece el botón de subir o bajar
     window.onscroll = () => {
       // console.log(scrollY);
       add_btn_scrolltop();
@@ -50,7 +77,8 @@ $(document).ready(function () {
       formularioContacto.validate({
         rules: {
           nombre: {
-            required: true
+            required: true,
+            minlength: 2
           },
           apellidos: {
             required: true
@@ -71,7 +99,8 @@ $(document).ready(function () {
         },
         messages: {
           nombre: {
-            required: 'El nombre es obligatorio'
+            required: 'El nombre es obligatorio',
+            minlength: 'Por favor, escribe al menos dos letras'
           },
           apellidos: {
             required: 'Por favor, escribe tus apellidos'

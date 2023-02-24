@@ -89,7 +89,7 @@ fieldset {
     padding-bottom: 10px;
 }
 
-#noticias {
+#noticias, div#accordion h1 {
     font-family: 'Titillium Web SemiBold', sans-serif;
 }
 
@@ -101,10 +101,19 @@ fieldset div#accordion a {
     font-family: 'Titillium Web Light', sans-serif;
 }
 
-nav a.nav-link {
+nav a.nav-link, a.dropdown-item {
     font-family: 'F1', sans-serif;
     font-weight: 500;
     font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+a.dropdown-item:active {
+    background-color: #cc2727;
+}
+
+div.alert.alert-success span {
+    font-family: 'Titillium Web Light', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -120,7 +129,7 @@ div#scrollspy {
     overflow-y: scroll;
 }
 
-#video, #pitlane {
+#video, #neumaticos, #pitlane, #comprarentradas {
     font-family: 'F1', sans-serif;
 }
 
@@ -207,5 +216,5 @@ div#scrollspy {
 .error {
     color: #cc2727;
     font-family: 'F1', sans-serif;
-    font-size: small;
+    font-size: medium;
 }
