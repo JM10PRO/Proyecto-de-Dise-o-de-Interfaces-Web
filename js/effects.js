@@ -58,7 +58,7 @@ jQuery(function() {
     const btn_scrolldown = document.getElementById('btn_scrolldown');
     
     btn_scrolldown.addEventListener('click', () => {
-      window.scrollTo(0,5000);
+      window.scrollTo(0,10000);
     });
 
     const add_btn_scrolldown = () => {
